@@ -1,0 +1,231 @@
+/* ==========< Media Queries for Mobile Devices >========== */
+@media (max-width: 480px) {
+  .hero-discount {
+    margin-bottom: 1rem;
+  }
+  .business-card-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bill-item {
+    flex-direction: column;
+  }
+
+  .bill-money {
+    align-self: center;
+  }
+
+  .bill-text-img {
+    gap: 0;
+  }
+
+  .testimonial-items{
+    gap: 2.5rem;
+  }
+
+  .testimonial-box{
+    text-align: center;
+  }
+  .testimonial-box-img img{
+    margin-inline: auto;
+  }
+  .testimonial-author{
+    flex-direction: column;
+  }
+  .testimonial-box{
+    padding: 1.5rem;
+  }
+  .testimonial-box > p{
+    margin-block: 1rem;
+  }
+  .testimonial-author{
+    gap: .5rem;
+  }
+
+  .service-box{
+    width: 100%;
+  }
+}
+
+/* ==========< Media Queries for iPads & tablets >========== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .main-menu {
+    position: fixed;
+    right: -100%;
+    top: 10%;
+    background: #14101d;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+    width: 50%;
+  }
+  .main-menu > .flex {
+    transition: 0.3s all ease-in-out;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+  }
+  .main-menu .nav-links {
+    width: 100%;
+    padding-block: 0.7rem;
+  }
+
+  .main-menu.active {
+    right: 0;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-discount {
+    margin-inline: auto;
+  }
+
+  .circle-1 {
+    display: none;
+  }
+
+  .circle-2 {
+    display: block;
+    margin: auto;
+  }
+
+  .hero-text > p {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-bottom.grid {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .top-cards {
+    flex-direction: column-reverse;
+  }
+
+}
+
+/* ==========< Media Queries for small laptops >========== */
+@media (max-width: 1024px) {
+  .business-section > .flex {
+    flex-direction: column;
+  }
+
+  .business-text {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .business-text p,
+  .business-text h2 {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .service-box{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer-section > .flex{
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright-author {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .copyright-author svg{
+    margin: 0 auto;
+  }
+
+}
+
+/* ==========< Media Queries for Desktops >========== */
+@media (max-width: 1200px) {
+  .hero-section > .grid {
+    grid-template-columns: 1fr;
+  }
+  .deal-section > .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .deal-text {
+    text-align: center;
+  }
+
+  .deal-text p,
+  .deal-text h2 {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .testimonial-text{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+ .testimonial-text h2 {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .testimonial-text p {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+}
+
+/* ==========< Media Queries for Extra Large Desktops & TV's >========== */
+@media (max-width: 1350px) {
+  .bill-section > .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .bill-text h2 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .bill-text p {
+    max-width: 30rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .testimonial-text{
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .testimonial-text{
+    gap: 1rem;
+  }
+}
+
+
